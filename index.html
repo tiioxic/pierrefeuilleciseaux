@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PFC</title>
+</head>
+<body>
+    <!-- affichera le score du joueur -->
+    <div class="score">
+        <p>Vous</p>
+        <p>IA</p>
+        <!-- identification des scores pour les modifier en js -->
+        <p id="score-player">0</p>
+        <p id="score-ordinateur">0</p>
+        <div id="reset">Recommencer</div>
+    </div>
+    <div class="action">
+        <p id="message">A vous de jouer !</p>
+        <div id="next">Tour suivant</div>
+    </div>
+    <div class="jeu">
+        <!-- different choix du joueurs -->
+        <div class="choix">
+            <div class="button btn-player" id="pierre">
+                <img src="./assets/pierre.png" alt="pierre">
+                <p>Pierre</p>
+            </div>
+            <div class="button btn-player" id="ciseaux">
+                <img src="./assets/ciseaux.png" alt="ciseaux">
+                <p>Ciseaux</p>
+            </div>
+            <div class="button btn-player" id="feuille">
+                <img src="./assets/feuille.png" alt="feuille">
+                <p>Feuille</p>
+            </div>
+        </div>
+        <!-- partie ordinateur on change les id pour l'ordi -->
+        <div class="choix">
+            <div class="button btn-ordi" id="opierre">
+                <img src="./assets/pierre.png" alt="pierre">
+                <p>Pierre</p>
+            </div>
+            <div class="button btn-ordi" id="ociseaux">
+                <img src="./assets/ciseaux.png" alt="ciseaux">
+                <p>Ciseaux</p>
+            </div>
+            <div class="button btn-ordi" id="ofeuille">
+                <img src="./assets/feuille.png" alt="feuille">
+                <p>Feuille</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
